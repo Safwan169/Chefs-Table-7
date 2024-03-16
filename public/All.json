@@ -1,0 +1,96 @@
+
+     [
+      {
+        "recipe_id": "1",
+        "recipe_name": "Spaghetti Carbonara",
+        "short_description": "Classic Italian pasta dish with bacon, eggs, and Parmesan cheese.",
+        "ingredients": [
+          "400g spaghetti",
+          "200g pancetta or bacon, diced",
+          "3 large eggs",
+          "100g grated Parmesan cheese",
+          "Salt and black pepper to taste"
+        ],
+        "preparing_time": "20 min",
+        "calories": "450 calories",
+        "recipe_image": "https://i.ibb.co/c6Lc3mR/Spaghetti-Carbonara.jpg"
+      },
+      {
+        "recipe_id": "2",
+        "recipe_name": "Chicken Tikka Masala",
+        "short_description": "Creamy and flavorful Indian dish with tender chicken in a spiced tomato-based sauce.",
+        "ingredients": [
+          "500g chicken breast, cubed",
+          "200ml plain yogurt",
+          "2 tbsp tikka masala spice mix",
+          "400g canned diced tomatoes",
+          "Fresh coriander leaves for garnish"
+        ],
+        "preparing_time": "40 min",
+        "calories": "380 calories",
+        "recipe_image": "https://i.ibb.co/0hvRdWk/Chicken-Tikka-Masala.jpg"
+      },
+      {
+        "recipe_id": "3",
+        "recipe_name": "Caprese Salad",
+        "short_description": "Simple and refreshing Italian salad with fresh tomatoes, mozzarella, and basil.",
+        "ingredients": [
+          "3 large tomatoes, sliced",
+          "200g fresh mozzarella cheese, sliced",
+          "Handful of fresh basil leaves",
+          "2 tbsp extra virgin olive oil",
+          "Salt and pepper to taste"
+        ],
+        "preparing_time": "10 min",
+        "calories": "250 calories",
+        "recipe_image": "https://i.ibb.co/cFXrYxt/Caprese-Salad.jpg"
+      },
+      {
+        "recipe_id": "4",
+        "recipe_name": "Vegetable Stir-Fry",
+        "short_description": "Healthy and colorful stir-fried vegetables with a savory sauce.",
+        "ingredients": [
+          "1 red bell pepper, sliced",
+          "1 yellow bell pepper, sliced",
+          "1 green bell pepper, sliced",
+          "200g snow peas",
+          "250g mushrooms, sliced"
+        ],
+        "preparing_time": "25 min",
+        "calories": "180 calories",
+        "recipe_image": "https://i.ibb.co/W28QXHZ/Vegetable-Stir-Fry.jpg"
+      },
+      {
+        "recipe_id": "5",
+        "recipe_name": "Beef Chili",
+        "short_description": "Hearty and spicy chili made with ground beef, beans, and tomatoes.",
+        "ingredients": [
+          "500g ground beef",
+          "400g canned kidney beans, drained and rinsed",
+          "400g canned diced tomatoes",
+          "1 onion, chopped",
+          "3 cloves garlic, minced",
+          "2 tbsp chili powder"
+        ],
+        "preparing_time": "1 hr",
+        "calories": "320 calories",
+        "recipe_image": "https://i.ibb.co/zrgd5B3/pexels-valeria-boltneva-7474163.jpg"
+      },
+      {
+        "recipe_id": "6",
+        "recipe_name": "Mushroom Risotto",
+        "short_description": "Creamy and comforting Italian rice dish with mushrooms and Parmesan cheese.",
+        "ingredients": [
+          "300g Arborio rice",
+          "200g mushrooms, sliced",
+          "1 onion, finely chopped",
+          "1 liter vegetable broth",
+          "50g grated Parmesan cheese"
+        ],
+        "preparing_time": "35 min",
+        "calories": "320 calories",
+        "recipe_image": "https://i.ibb.co/5BbyKdH/pexels-ella-olsson-3026808.jpg"
+      }
+    ]
+  
+  

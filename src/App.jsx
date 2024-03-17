@@ -22,11 +22,11 @@ function App() {
   const [Cooks, setCooks] = useState([])
   console.log(Cooks)
 // Cooks.includes
-  const wantBtn = (recipe_id) => {
+  const wantBtn = (cartDataa) => {
 
 
-if(Cooks.includes(recipe_id)===false){
-  const newcook = [...Cooks, recipe_id]
+if(Cooks.includes(cartDataa)===false){
+  const newcook = [...Cooks, cartDataa]
   setCooks(newcook)
 }
 //  if (Cooks.filter(recipe_id)!==recipe_id) {
@@ -61,9 +61,16 @@ if(Cooks.includes(recipe_id)===false){
             cartData.map((cartDataa) => (<Cart cartDataa={cartDataa} wantBtn1={wantBtn} ></Cart>))
           }
         </div>
-        <div>
-          <Cook cooks={Cooks} ></Cook>
-          <Aside></Aside>
+        <div className='border border-gray-950'>
+          <div className='w-[500px]'>
+          <Cook  cooks={Cooks} ></Cook>
+
+          </div>
+         <div className=''>
+         {
+            Cooks.map((Cook,idx)=><Aside Cook={Cook} idx={idx} ></Aside>)
+          }
+         </div>
         </div>
       </div>
     </div>

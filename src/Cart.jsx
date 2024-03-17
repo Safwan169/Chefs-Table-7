@@ -23,7 +23,7 @@ const Cart = ({cartDataa,wantBtn1 }) => {
       <div className='mt-4'>
       <p className='text-gray-500 font-normal flex gap-9 '><span className='flex items-center gap-2'><CiAlarmOn className=' text-black' />{preparing_time}</span> <span className='flex items-center gap-2'><BsFire />{calories}</span></p>
 
-<button onClick={()=>wantBtn1(recipe_id)} className='btn w-[170px] bg-green-400 text-[18px] font-bold p-2 mt-5 rounded-3xl'>Want to cook</button>
+<button onClick={()=>wantBtn1(cartDataa)} className='btn w-[170px] bg-green-400 text-[18px] font-bold p-2 mt-5 rounded-3xl'>Want to cook</button>
 
       </div>
    </div>

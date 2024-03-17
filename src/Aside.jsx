@@ -1,6 +1,11 @@
 import React from 'react';
 
-const Aside = () => {
+const Aside = ({Cook,idx}) => {
+  const {recipe_id,recipe_name,preparing_time,calories}=Cook
+  // const {Cook}=Cook
+  console.log(
+   idx+1
+    )
     return (
         <div>
             <div>
@@ -18,11 +23,11 @@ const Aside = () => {
     </thead>
     <tbody>
       {/* <!-- row 1 --> */}
-      <tr class="bg-base-200">
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+      <tr class="bg-base-200 text-black">
+        <th>{idx+1}</th>
+        <td>{recipe_name}</td>
+        <td>{preparing_time}</td>
+        <td>{calories}</td>
         <td><button className='bg-green-400 rounded-3xl btn w-24 font-semibold'> Preparing</button></td>
       </tr>
      

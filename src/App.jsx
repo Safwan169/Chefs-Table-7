@@ -6,6 +6,10 @@ import './App.css'
 import Header from './Header'
 import Aside from './Aside'
 import Cook from './Cook'
+import Cooking from './Cooking'
+import Currenly from './Currenly'
+import Cal from './Cal'
+
 
 // import { data } from 'autoprefixer'
 
@@ -20,7 +24,10 @@ function App() {
   }, [])
 
   const [Cooks, setCooks] = useState([])
-  console.log(Cooks)
+  // console.log(Cooks)
+
+
+
 // Cooks.includes
   const wantBtn = (cartDataa) => {
 
@@ -29,28 +36,26 @@ if(Cooks.includes(cartDataa)===false){
   const newcook = [...Cooks, cartDataa]
   setCooks(newcook)
 }
-//  if (Cooks.filter(recipe_id)!==recipe_id) {
-//   const newcook = [...Cooks, recipe_id]
-//       setCooks(newcook)
-//   console.log('654654')
-//  }
 
-    // if (!Cooks.find(recipe_id) ){
-     
-      
-    //   console.log('sdughfudgf')
-    // }
-    // else{
-    //   console.log('sdughfudgf')
-    
-    // }
 
     else{
       alert("jhyuihuij")
     }
-    // console.log(Cook)
-    // return ("aisa")
+   
   }
+  let [Cooking1,setCooking1]=useState([])
+
+  const current=(Cook)=>{
+
+// console.log(Cook)
+const newCook=Cooks.filter((c)=>c!==Cook)
+setCooks(newCook);
+const lol=[...Cooking1,Cook]
+setCooking1(lol)
+
+  }
+
+  
   return (
     <div className='lg:w-[1150px] mx-auto'>
       <Header></Header>
@@ -68,8 +73,19 @@ if(Cooks.includes(cartDataa)===false){
           </div>
          <div className=''>
          {
-            Cooks.map((Cook,idx)=><Aside Cook={Cook} idx={idx} ></Aside>)
+            Cooks.map((Cook,idx)=><Aside Cook={Cook}  current={current} idx={idx} ></Aside>)
           }
+          <div>
+            <Currenly Cooking11={Cooking1}></Currenly>
+          </div>
+          <div>
+          {
+            Cooking1.map((l,idx)=><Cooking idx={idx} l={l}></Cooking>)
+          }
+          </div>
+          <div>
+            <Cal Cooking1={Cooking1}></Cal>
+          </div>
          </div>
         </div>
       </div>

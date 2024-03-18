@@ -94,4 +94,4 @@ setCooking1(lol)
   )
 }
 
-export default Ap
+export default App

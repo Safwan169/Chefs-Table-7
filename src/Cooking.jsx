@@ -17,10 +17,10 @@ const Cooking = ({ l, idx }) => {
                 {/* <!-- row 1 --> */}
                 <tr className="bg-base-200  text-black">
                   <th>{idx + 1}</th>
-                  <td className='  p-0 text-center w-[100px]'>{recipe_name}</td>
-                  <td className=' w-[200px] text-center'>{preparing_time}min</td>
+                  <td className='  p-0 text-center lg:w-[100px]'>{recipe_name}</td>
+                  <td className=' lg:w-[200px] text-center'>{preparing_time}min</td>
                   <td className=''>{calories}calories</td>
-                  <td><button className=' w-20 '> </button></td>
+                  <td><button className=' w-2 lg:w-20 '> </button></td>
                 </tr>
   
               </tbody>

@@ -39,7 +39,7 @@ if(Cooks.includes(cartDataa)===false){
 
 
     else{
-      alert("jhyuihuij")
+   alert("You can't add  more than one time")
     }
    
   }
@@ -57,17 +57,17 @@ setCooking1(lol)
 
   
   return (
-    <div className='lg:w-[1150px] mx-auto'>
+    <div className='lg:w-[1150px]  mx-auto'>
       <Header></Header>
       <Cartdis></Cartdis>
-      <div className="flex mt-16">
-        <div className=' grid grid-cols-2 mb-4 border border-red-500 '>
+      <div className="flex flex-col lg:flex-row mt-16">
+        <div className=' grid  grid-cols-1 lg:grid-cols-2 mb-4 mr-2'>
           {
             cartData.map((cartDataa) => (<Cart cartDataa={cartDataa} wantBtn1={wantBtn} ></Cart>))
           }
         </div>
-        <div className='border border-gray-950'>
-          <div className='w-[500px]'>
+        <div className=' w-full lg:w-[500px] shadow-xl'>
+          <div className=' lg:w-[500px]'>
           <Cook  cooks={Cooks} ></Cook>
 
           </div>
@@ -75,15 +75,15 @@ setCooking1(lol)
          {
             Cooks.map((Cook,idx)=><Aside Cook={Cook}  current={current} idx={idx} ></Aside>)
           }
-          <div>
+          <div className=''>
             <Currenly Cooking11={Cooking1}></Currenly>
           </div>
-          <div>
+          <div className=''>
           {
             Cooking1.map((l,idx)=><Cooking idx={idx} l={l}></Cooking>)
           }
           </div>
-          <div>
+          <div className=''>
             <Cal Cooking1={Cooking1}></Cal>
           </div>
          </div>

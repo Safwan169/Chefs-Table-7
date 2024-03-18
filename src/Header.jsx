@@ -50,24 +50,24 @@ function Header(props) {
                 </div>
             </div>
             <div >
-                <div className='absolute my-5 top-[250px] text-white left-1/2 -translate-x-1/2'>
-                    <div className='text-center font-bold text-4xl w-[897px] mb-5'>
+                <div className='absolute my-5 lg:top-[250px] top-[100px] text-white left-1/2 -translate-x-1/2'>
+                    <div className='text-center font-bold lg:text-4xl w-[897px] mb-5'>
                         Discover an exceptional cooking <br /> class tailored for you!
                     </div>
-                    <div className='text-xs w-[933px] leading-6 font-extralight text-center'>
+                    <div className='text-xs  ml-[270px] lg:ml-0 w-[340px] lg:w-[930px] leading-6 font-extralight text-center'>
                         Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ <br /> coding problems to become an exceptionally well world-class Programmer.
                     </div>
-                    <div className='flex items-center gap-6 mt-6 justify-center '>
-                        <button className='bg-green-500 p-2 hover:bg-green-600 text-white  btn rounded-3xl'>
+                    <div className='flex items-center gap-6 mt-4 lg:mt-6 justify-center '>
+                        <button className='bg-green-500 p-2 hover:bg-green-600  text-white  btn rounded-3xl'>
                             Explore Now
                         </button >
-                        <button className='rounded-3xl btn bg-transparent text-white hover:bg-transparent border p-2 bg-none border-white'>
+                        <button className='rounded-3xl btn bg-transparent text-black lg:text-white hover:bg-transparent border p-2 bg-none border-black lg:border-white'>
                             Our Feedback
                         </button>
                     </div>
                 </div>
 
-                <img src={Rectangle} alt="" />
+                <img  src={Rectangle} alt="" />
             </div>
         </div>
     );

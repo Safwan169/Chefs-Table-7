@@ -7,7 +7,7 @@ const Aside = ({ Cook, idx, current }) => {
   // current
   //   )
   return (
-    <div>
+    <div className=' w-full'>
       <div>
         <div className="overflow-x-auto">
           <table className="table">
@@ -16,9 +16,9 @@ const Aside = ({ Cook, idx, current }) => {
               {/* <!-- row 1 --> */}
               <tr className="bg-base-200 text-black">
                 <th>{idx + 1}</th>
-                <td>{recipe_name}</td>
-                <td className='text-center'>{preparing_time}min</td>
-                <td className=' text-center pl-14 pr-0'>{calories}calories</td>
+                <td className=' lg:w-[150px] '>{recipe_name}</td>
+                <td className='text-center '>{preparing_time}min</td>
+                <td className=' text-center lg:pl-14 pr-0 '>{calories}calories</td>
                 <td><button onClick={() => current( Cook)} className='bg-green-400 rounded-3xl btn w-24 font-semibold'> Preparing</button></td>
               </tr>
 
